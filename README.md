@@ -28,6 +28,7 @@
   <img src="https://img.shields.io/github/watchers/walber-vaz/api-go?style=social"/>
 </div>
 
+<a id="tabela-de-conteúdos"></a>
 ## :pushpin: Tabela de conteúdos
 
 <!--ts-->
@@ -45,12 +46,18 @@
 <!--te-->
 
 <a id="Sobre"></a>
+
 ## :bookmark: Sobre
+
+<!-- volta para menu -->
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
 API REST em Go é uma aplicação que simula uma API REST para cadastro de usuários e produtos. A aplicação esta sendo desenvolvida com o objetivo de aprender a linguagem Go e seus conceitos.
 
 <a id="status-do-projeto"></a>
 ## :construction_worker: Status do Projeto
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
 <h4 align="center">
   🚧  API REST em Go 🚀 Em construção...  🚧
@@ -58,6 +65,8 @@ API REST em Go é uma aplicação que simula uma API REST para cadastro de usuá
 
 <a id="features"></a>
 ## :heavy_check_mark: Features
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
 * [ ] Cadastro de usuários
 * [ ] Cadastro de produtos
@@ -71,10 +80,14 @@ API REST em Go é uma aplicação que simula uma API REST para cadastro de usuá
 <a id="demonstração-da-aplicação"></a>
 ## :computer: Demonstração da Aplicação
 
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
+
 A aplicação ainda esta em desenvolvimento.
 
 <a id="pré-requisitos"></a>
 ## :warning: Pré-requisitos
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
 Antes de começar, é necessário você ter instalado em sua máquina as seguintes ferramentas:
 
@@ -89,6 +102,8 @@ Antes de começar, é necessário você ter instalado em sua máquina as seguint
 
 <a id="como-rodar-a-aplicação"></a>
 ## :rocket: Como rodar a aplicação
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
 ```bash
 # Clone este repositório
@@ -106,6 +121,8 @@ $ make run
 <a id="rodando-a-aplicação-web"></a>
 ## :hammer: Tecnologias
 
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
+
 As seguintes ferramentas foram usadas na construção do projeto:
 
 * [Go](https://golang.org/)
@@ -121,6 +138,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a id="tecnologias"></a>
 ## :woman_technologist: Autor
 
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
+
 Feito por Walber Vaz 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Walber-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/walber-vaz/)](https://www.linkedin.com/in/walber-vaz/)
@@ -128,5 +147,7 @@ Feito por Walber Vaz 👋🏽 Entre em contato!
 
 <a id="licença"></a>
 ## :memo: Licença
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
