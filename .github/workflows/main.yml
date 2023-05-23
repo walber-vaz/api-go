@@ -1,0 +1,45 @@
+name: main
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set Go version
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: ./go.mod
+
+      - name: Get dependencies
+        run: go mod download \
+          && go mod verify \
+          && go mod tidy \
+          && go mod vendor
+
+      - name: Build
+        run: go build -v -o ./bin/apigo ./cmd/main.go
+
+      - name: Test
+        run: go test -v ./...
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Snyk security scan
+        uses: snyk/actions/go@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - name: Run Snyk code security scan
+        uses: snyk/actions/go-code-scan@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
