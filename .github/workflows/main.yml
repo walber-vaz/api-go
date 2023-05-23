@@ -17,11 +17,8 @@ jobs:
         with:
           go-version-file: ./go.mod
 
-      - name: Get dependencies
-        run: go mod download \
-          && go mod verify \
-          && go mod tidy \
-          && go mod vendor
+      - name: Install dependencies
+        run: go mod download
 
       - name: Build
         run: go build -v -o ./bin/apigo ./cmd/main.go
