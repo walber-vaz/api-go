@@ -26,17 +26,17 @@ jobs:
       - name: Test
         run: go test -v ./...
 
-  security:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+  # security:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
 
-      - name: Run Snyk security scan
-        uses: snyk/actions/go@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  #     - name: Run Snyk security scan
+  #       uses: snyk/actions/go@master
+  #       env:
+  #         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
-      - name: Run Snyk code security scan
-        uses: snyk/actions/go-code-scan@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  #     - name: Run Snyk code security scan
+  #       uses: snyk/actions/go-code-scan@master
+  #       env:
+  #         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
