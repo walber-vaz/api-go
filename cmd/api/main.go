@@ -1,24 +1,9 @@
 package main
 
-import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
-)
-
-func mainHandler() *gin.Engine {
-	app := gin.Default()
-	app.GET("/", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "Hello World!",
-		})
-	})
-
-	return app
-}
+import "github.com/walber-vaz/api-go/cmd/api/routers"
 
 func main() {
-	app := mainHandler()
+	app := routers.RouterHandler()
 
 	app.Run(":9000")
 }
