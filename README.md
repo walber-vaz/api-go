@@ -29,6 +29,7 @@
 </div>
 
 <a id="tabela-de-conteúdos"></a>
+
 ## :pushpin: Tabela de conteúdos
 
 <!--ts-->
@@ -40,6 +41,7 @@
 * [Como rodar a aplicação](#como-rodar-a-aplicação)
 * [Tecnologias](#tecnologias)
 * [Autor](#autor)
+* [Como contribuir](#como-contribuir)
 * [Licença](#licença)
 <!--te-->
 
@@ -50,9 +52,10 @@
 <!-- volta para menu -->
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
-API REST em Go é uma aplicação que simula uma API REST para cadastro de usuários e produtos. A aplicação esta sendo desenvolvida com o objetivo de aprender a linguagem Go e seus conceitos.
+API REST em Go é uma aplicação para cadastro de jobs e freelancers. Esta em desenvolvimento e será utilizada para estudo de Go.
 
 <a id="status-do-projeto"></a>
+
 ## :construction_worker: Status do Projeto
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
@@ -62,20 +65,25 @@ API REST em Go é uma aplicação que simula uma API REST para cadastro de usuá
 </h4>
 
 <a id="features"></a>
+
 ## :heavy_check_mark: Features
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
 
+* [x] Setup inicial do projeto
+* [x] Configuração do banco de dados
+* [x] Configuração do servidor
+* [x] Configuração do roteamento
+* [ ] Cadastro de jobs
+* [ ] Cadastro de freelancers
 * [ ] Cadastro de usuários
-* [ ] Cadastro de produtos
-* [ ] Listagem de usuários
-* [ ] Listagem de produtos
-* [ ] Atualização de usuários
-* [ ] Atualização de produtos
-* [ ] Exclusão de usuários
-* [ ] Exclusão de produtos
+* [ ] Autenticação de usuários
+* [ ] Autorização de usuários
+* [ ] Testes unitários
+* [ ] Testes de integração
 
 <a id="demonstração-da-aplicação"></a>
+
 ## :computer: Demonstração da Aplicação
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
@@ -83,6 +91,7 @@ API REST em Go é uma aplicação que simula uma API REST para cadastro de usuá
 A aplicação ainda esta em desenvolvimento.
 
 <a id="pré-requisitos"></a>
+
 ## :warning: Pré-requisitos
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
@@ -99,6 +108,7 @@ Antes de começar, é necessário você ter instalado em sua máquina as seguint
 * [Make](https://www.gnu.org/software/make/)
 
 <a id="como-rodar-a-aplicação"></a>
+
 ## :rocket: Como rodar a aplicação
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
@@ -117,6 +127,7 @@ $ make run
 ```
 
 <a id="rodando-a-aplicação-web"></a>
+
 ## :hammer: Tecnologias
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
@@ -134,6 +145,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * [Gin](https://gin-gonic.com/)
 
 <a id="tecnologias"></a>
+
 ## :woman_technologist: Autor
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
@@ -143,7 +155,21 @@ Feito por Walber Vaz 👋🏽 Entre em contato!
 [![Linkedin Badge](https://img.shields.io/badge/-Walber-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/walber-vaz/)](https://www.linkedin.com/in/walber-vaz/)
 [![Github Badge](https://img.shields.io/badge/-Walber-000?style=flat-square&logo=Github&logoColor=white&link=walbervaz)](https://github.com/walber-vaz)
 
+<a id="como-contribuir"></a>
+
+## :recycle: Como contribuir para o projeto
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+
+> Em caso de dúvidas acesse [esse guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
 <a id="licença"></a>
+
 ## :memo: Licença
 
 :point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
