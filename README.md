@@ -38,8 +38,6 @@
 * [Demonstração da Aplicação](#demonstração-da-aplicação)
 * [Pré-requisitos](#pré-requisitos)
 * [Como rodar a aplicação](#como-rodar-a-aplicação)
-  * [Rodando a aplicação web](#rodando-a-aplicação-web)
-  * [Rodando a aplicação mobile](#rodando-a-aplicação-mobile)
 * [Tecnologias](#tecnologias)
 * [Autor](#autor)
 * [Licença](#licença)
