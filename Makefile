@@ -29,4 +29,4 @@ docker-prod:
 
 build-dev:
 	@echo "$(C_PURPLE)[BUILD-DEV]$(C_RESET)$(C_WHITE)Building dev air...$(C_RESET)"
-	@CGO_ENABLED=0 GOOS=linux GOARCH=amd64  go build -a -installsuffix cgo -o tmp/apigo ./cmd/api/main.go
+	@CGO_ENABLED=0 GOOS=linux GOARCH=amd64  go build -a -installsuffix cgo -o tmp/apigo ./main.go
