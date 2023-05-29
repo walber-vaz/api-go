@@ -1,8 +1,8 @@
 .git
 .vscode
 .*ignore
-README.md
 docker-compose*.yml
 Dockerfile*
 **/*_test.go
 *.md
+LICENSE
