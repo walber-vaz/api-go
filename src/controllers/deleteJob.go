@@ -2,4 +2,4 @@ package controllers
 
 import "github.com/gin-gonic/gin"
 
-func DeleteUser(c *gin.Context) {}
+func DeleteJob(c *gin.Context) {}
