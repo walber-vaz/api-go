@@ -4,4 +4,4 @@ import "github.com/gin-gonic/gin"
 
 func FindAllJobs(c *gin.Context) {}
 
-func FindJobsId(c *gin.Context) {}
+func FindJobId(c *gin.Context) {}
