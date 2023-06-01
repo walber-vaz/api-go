@@ -1,4 +1,4 @@
-.PHONY: run clean test docker-dev docker-prod build-dev
+.PHONY: run clean test build
 
 C_RED=\033[0;31m
 C_GREEN=\033[0;32m
@@ -12,21 +12,17 @@ C_RESET=\033[0m
 default: run
 
 run:
-	@echo "$(C_CYAN)[RUN]$(C_RESET)$(C_WHITE)Running dev docker image...$(C_RESET)"
-	@docker-compose -f docker-compose.dev.yml up --build
+	@echo "$(C_CYAN)[RUN-DEV]$(C_RESET)$(C_WHITE)Running server dev in go...$(C_RESET)"
+	@go run main.go
 
 clean:
 	@echo "$(C_RED)[CLEAR]$(C_RESET)$(C_WHITE)Cleaning up...$(C_RESET)"
-	@rm -rf *.so *.test *.out *.log *.db *.zip
+	@rm -rf *.so *.test *.out *.log *.db *.zip apijobs
 
 test:
 	@echo "$(C_YELLOW)[TEST]$(C_RESET)$(C_WHITE)Running tests...$(C_RESET)"
 	@go test -v ./...
 
-docker-prod:
-	@echo "$(C_BLUE)[PROD]$(C_RESET)$(C_WHITE)Building prod docker image...$(C_RESET)"
-	@docker-compose -f docker-compose.yml up --build
-
-build-dev:
-	@echo "$(C_PURPLE)[BUILD-DEV]$(C_RESET)$(C_WHITE)Building dev air...$(C_RESET)"
-	@CGO_ENABLED=0 GOOS=linux GOARCH=amd64  go build -a -installsuffix cgo -o tmp/apigo ./main.go
+build:
+	@echo "$(C_PURPLE)[BUILD]$(C_RESET)$(C_WHITE)Building dev air...$(C_RESET)"
+	@CGO_ENABLED=0 GOOS=linux GOARCH=amd64  go build -a -installsuffix cgo -o apijobs ./main.go
